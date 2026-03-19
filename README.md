@@ -80,6 +80,8 @@ Configuration file uses key/value CSV format.
 | `min_length_low` | Minimum LOW segment length (samples) | 50 |
 | `short_segment_policy` | Short segment handling (`extend` / `discard`) | extend |
 
+The default value reflects the final results obtained during the testing phase rather than the optimal partitioning. In practice, the optimal partition length is related to the number of batteries: when the number of batteries is large, using a smaller length can significantly improve performance.
+
 ### Frequency Set Overlap Mode
 
 | Parameter | Description | Default |
